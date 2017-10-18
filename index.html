@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Marketplace</title>
@@ -60,27 +60,26 @@
             <div class="form-group row">
               <label for="productInput" class="col-2 col-form-label text-center">What wood you like order:</label>
               <div class="col-5">
-                <select class="form-control" id="product">
-                  <option value="cedar">$800 - Artisinal Cedar (a fan favorite)</option>
-                  <option value="pine">$950 - Oregon Raised Pine (a little burnt)</option>
-                  <option value="maple">$1100 - Canadian Maple</option>
-                  <option value="redcedar">$1400 - Western Red Cedar, grown in free range, vegetarian fed Washington farms.</option>
-                  <option value="bourbonoak">$1600 - Barrel Aged Oak, soaked in bourbon.</option>
+                <select class="form-control" id="productInput">
+                  <option value="$800 - Artisinal Cedar (a fan favorite)">$800 - Artisinal Cedar (a fan favorite)</option>
+                  <option value="$950 - Oregon Raised Pine (a little burnt)">$950 - Oregon Raised Pine (a little burnt)</option>
+                  <option value="$1100 - Canadian Maple">$1100 - Canadian Maple</option>
+                  <option value="$1400 - Western Red Cedar, grown in free range, vegetarian fed Washington farms.">$1400 - Western Red Cedar, grown in free range, vegetarian fed Washington farms.</option>
+                  <option value="$1600 - Barrel Aged Oak, soaked in bourbon.">$1600 - Barrel Aged Oak, soaked in bourbon.</option>
+                </select>
+                <button type="submit" class="btn btn-danger">Order some wood!</button>
               </div>
             </div>
           </form>
-          <div id="receipt" class="col-lg-6 card">
+          <div id="receipt" class="col-lg-5 card">
             <div class="card-body">
               <h2 class ="card-header text center">Your receipt:</h2>
               <div class="card-text">
                 <p>Hey, <strong><span class="nameInput"></span></strong> thanks for shopping at "Wood You Rather", hope you enjoy what you saw. Remember .05% of your purchase is donated to trees in need (AKA Future wood).</p>
                 <p>You ordered <strong><span class="product"></span></strong></p>
-                <p>You purchase will be delivered to <strong><span class></span></p>
-
-
+                <p>You purchase will be delivered to <strong><span id="concatAddress"></span></p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
