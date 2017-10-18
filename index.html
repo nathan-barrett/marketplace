@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Wood you rather?</h1>
+      </div>
+      <div class="row">
+        <div class="col-6-lg">
+          <form id="formBody">
+            <div class="form-group row">
+              <label for="nameInput" class="col-2 col-form-label text-center">First and Last Name:</label>
+              <div class="col-5">
+                <input class="form-control" type="text" id="nameInput">
+              </div>
+            </div>
+    <!--first question of form-->
+            <div class="form-group row">
+              <label for="addressInput1" class="col-2 col-form-label text-center">Address Line 1:</label>
+              <div class="col-5">
+                <input class="form-control" type="text" id="addressInput1">
+              </div>
+            </div>
+    <!--first question of form-->
+            <div class="form-group row">
+              <label for="addressInput2" class="col-2 col-form-label text-center">Address Line 2:</label>
+              <div class="col-5">
+                <input class="form-control" type="text" id="addressInput2">
+              </div>
+            </div>
+    <!--second question of form-->
+            <div class="form-group row">
+              <label for="cityInput" class="col-2 col-form-label text-center">City:</label>
+              <div class="col-5">
+                <input class="form-control" type="text" id="cityInput">
+              </div>
+            </div>
+    <!--third question of form-->
+            <div class="form-group row">
+              <label for="stateInput" class="col-2 col-form-label text-center">State:</label>
+              <div class="col-5">
+                <input class="input-group-lg form-control" type="text" id="stateInput">
+              </div>
+            </div>
+    <!--fourth question of form-->
+            <div class="form-group row">
+              <label for="zipInput" class="col-2 col-form-label text-center">Zipcode:</label>
+              <div class="col-5">
+                <input class="input-group-lg form-control" type="text" id="zipInput">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="productInput" class="col-2 col-form-label text-center">What wood you like order:</label>
+              <div class="col-5">
+                <select class="form-control" id="product">
+                  <option value="cedar">$800 - Artisinal Cedar (a fan favorite)</option>
+                  <option value="pine">$950 - Oregon Raised Pine (a little burnt)</option>
+                  <option value="maple">$1100 - Canadian Maple</option>
+                  <option value="redcedar">$1400 - Western Red Cedar, grown in free range, vegetarian fed Washington farms.</option>
+                  <option value="bourbonoak">$1600 - Barrel Aged Oak, soaked in bourbon.</option>
+              </div>
+            </div>
+          </form>
+          <div id="receipt" class="col-lg-6 card">
+            <div class="card-body">
+              <h2 class ="card-header text center">Your receipt:</h2>
+              <div class="card-text">
+                <p>Hey, <strong><span class="nameInput"></span></strong> thanks for shopping at "Wood You Rather", hope you enjoy what you saw. Remember .05% of your purchase is donated to trees in need (AKA Future wood).</p>
+                <p>You ordered <strong><span class="product"></span></strong></p>
+                <p>You purchase will be delivered to <strong><span class></span></p>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
